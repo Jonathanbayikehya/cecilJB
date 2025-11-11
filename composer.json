@@ -1,10 +1,46 @@
 {
+    "name": "jonathanbayikehya/portfolio",
+    "type": "project",
+    "description": "Portfolio de Jonathan Bayikehya - Développeur Étudiant",
+    "keywords": ["portfolio", "cecil", "static-site", "github-pages"],
+    "homepage": "https://github.com/Jonathanbayikehya/portfolio",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jonathan Bayikehya",
+            "email": "jonathanbayikehya1960@gmail.com",
+            "homepage": "https://jonathanbayikehya.github.io",
+            "role": "Developer"
+        }
+    ],
     "require": {
-        "cecil/theme-docs": "^2.42"
+        "php": ">=7.4",
+        "cecil/cecil": "^7.0"
+    },
+    "require-dev": {
+        "cecil/theme-hyde": "^1.0"
     },
     "config": {
-        "allow-plugins": {
-            "cecil/theme-installer": true
+        "platform": {
+            "php": "7.4"
+        },
+        "sort-packages": true
+    },
+    "scripts": {
+        "build": "cecil build",
+        "build:draft": "cecil build --draft",
+        "build:verbose": "cecil build -v",
+        "serve": "cecil serve",
+        "serve:draft": "cecil serve --draft",
+        "clean": "cecil clean",
+        "list": "cecil list",
+        "new:page": "cecil new:page",
+        "new:post": "cecil new:post"
+    },
+    "extra": {
+        "cecil": {
+            "php": "7.4"
         }
     }
 }
+
