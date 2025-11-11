@@ -1,0 +1,61 @@
+# Configuration du site - Version finale
+title: "Jonathan Bayikehya - Développeur Web"
+baseline: "Développeur passionné créant des solutions digitales innovantes"
+baseurl: "https://jonathanbayikehya.github.io/projet-cecil"
+description: "Portfolio de Jonathan Bayikehya, développeur web passionné"
+taxonomies:
+  - tags
+
+# Métadonnées
+author:
+  name: "Jonathan Bayikehya"
+  email: "jonathanbayikehya1960@gmail.com"
+
+# Construction
+bodyclass: "page"
+timezone: "Africa/Lubumbashi"
+
+# Paramètres de construction
+build:
+  destination: "_site"
+  baseurl: "" 
+
+# Paramètres du serveur
+server:
+  port: 8000
+  host: "127.0.0.1"
+
+# Sections
+section:
+  pages:
+    name: "Pages"
+    path: "pages"
+
+# Menu
+menu:
+  main:
+    - id: "accueil"
+      name: "Accueil"
+      url: "/"
+      weight: 1
+    - id: "apropos"
+      name: "À propos"
+      url: "/about/"
+      weight: 2
+    - id: "projets"
+      name: "Projets"
+      url: "/projects/"
+      weight: 3
+    - id: "contact"
+      name: "Contact"
+      url: "/contact/"
+      weight: 4
+
+# Paramètres sociaux
+social:
+  - name: "GitHub"
+    url: "https://github.com/Jonathanbayikehya"
+    icon: "github"
+  - name: "Email"
+    url: "mailto:jonathanbayikehya1960@gmail.com"
+    icon: "envelope"
